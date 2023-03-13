@@ -17,7 +17,17 @@
 </head>
 <body>
     <header>
-        Template cabeçalho
+        <a href="<?= $BASE_URL ?>" id="logo">
+            <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Logo do site"> 
+        </a>
     </header>
+    <nav>
+        <ul id="navbar">
+            <li><a href="<?= $BASE_URL ?>">Home</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="<?= $BASE_URL ?>contato.php">Contato</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
