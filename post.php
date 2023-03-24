@@ -50,21 +50,21 @@
                 fugiat dicta animi ab atque itaque sint at? Eius, ipsum.
             </p>
         </div>
+        <aside class="nav-container">
+            <h1 id="tags-title">Tags</h1>
+            <ul id="tags-list">
+                <?php foreach ($currentPost["tags"] as $tag) : ?>
+                    <li><a href="#"><?= $tag ?></a></li>    
+                <?php endforeach; ?>    
+            </ul>
+            <h3 id="categories-title">Categorias</h3>
+            <ul id="categories-list">
+                <?php foreach ($categories as $category) : ?>
+                    <li><a href="#"><?= $category ?></a></li>    
+                <?php endforeach; ?>
+            </ul>
+        </aside>
     </main>
-    <aside class="nav-container">
-        <h1 id="tag-container">Tags</h1>
-        <ul id="tag-list">
-            <?php foreach ($currentPost["tags"] as $tag) : ?>
-                <li><a href="#"><?= $tag ?></a></li>    
-            <?php endforeach; ?>    
-        </ul>
-        <h3 id="categories-title">Categorias</h3>
-        <ul id="categories-list">
-            <?php foreach ($categories as $category) : ?>
-                <li><a href="#"><?= $category ?></a></li>    
-            <?php endforeach; ?>
-        </ul>
-    </aside>
 <?php
     include_once("templates/footer.php");
 ?>
